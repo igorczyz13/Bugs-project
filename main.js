@@ -28,7 +28,7 @@ function addTax(price, tax = 0.23) {
     return price + price * tax
 }
 
-const priceWithTax = addTax(100,0)
+const priceWithTax = addTax(100, 0)
 
 console.log(priceWithTax);
 
@@ -64,3 +64,60 @@ const myCar = new Car('red')
 myCar.drive(1000)
 
 console.log(myCar);
+
+// ----------------------------------- Bug #009
+
+function reducer(accumulator, currentValue) {
+    currentValue += 1
+
+    return accumulator + currentValue
+}
+
+const numbers = [1, 2, 3]
+const sum = numbers.reduce(reducer)
+
+console.log(sum)
+
+// ----------------------------------- Bug #010
+
+function returnDummyObject() {
+    return {
+        foo: "bar"
+    }
+}
+
+console.log(returnDummyObject())
+
+// ----------------------------------- Bug #011
+
+const loggedUser = {
+    role: "reader",
+}
+
+function getUserPermission(user) {
+    let permission
+
+    switch (user.role) {
+        case "reader":
+            permission = "can read"
+        case "writer":
+            permission = "can write"
+        case "admin":
+            permission = "can everything"
+    }
+
+    return permission
+}
+
+console.log(getUserPermission(loggedUser))
+
+// ----------------------------------- Bug #012
+
+const user1 = {
+    name: "John",
+}
+const user2 = {
+    name: "John",
+}
+
+console.log(user1 == user2)
