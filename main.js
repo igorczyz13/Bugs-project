@@ -121,3 +121,16 @@ const user2 = {
 }
 
 console.log(user1 == user2)
+
+// ----------------------------------- Bug #013
+
+const lis = document.querySelectorAll('li')
+
+lis.map((li) => {
+    const updatedText =
+    li
+    .innerText
+    .replace('item', 'element')
+
+    li.innerText = updatedText
+})
