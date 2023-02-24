@@ -103,6 +103,14 @@ console.log(returnDummyObject())
 
 // ---- poprawna wersja
 
+function returnDummyObject() {
+    return {
+        foo: "bar"
+    }
+}
+
+console.log(returnDummyObject())
+
 // ----------------------------------- Bug #011
 
 const loggedUser = {
