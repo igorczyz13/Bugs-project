@@ -93,13 +93,13 @@ console.log(sum)
 
 // ----------------------------------- Bug #010
 
-function returnDummyObject() {
-    return {
-        foo: "bar"
-    }
-}
+// function returnDummyObject() {
+//     return {
+//         foo: "bar"
+//     }
+// }
 
-console.log(returnDummyObject())
+// console.log(returnDummyObject())
 
 // ---- poprawna wersja
 
@@ -113,6 +113,29 @@ console.log(returnDummyObject())
 
 // ----------------------------------- Bug #011
 
+// const loggedUser = {
+//     role: "reader",
+// }
+
+// function getUserPermission(user) {
+//     let permission
+
+//     switch (user.role) {
+//         case "reader":
+//             permission = "can read"
+//         case "writer":
+//             permission = "can write"
+//         case "admin":
+//             permission = "can everything"
+//     }
+
+//     return permission
+// }
+
+// console.log(getUserPermission(loggedUser))
+
+// ---- poprawna wersja
+
 const loggedUser = {
     role: "reader",
 }
@@ -123,18 +146,19 @@ function getUserPermission(user) {
     switch (user.role) {
         case "reader":
             permission = "can read"
+            break
         case "writer":
             permission = "can write"
+            break
         case "admin":
             permission = "can everything"
+            break
     }
 
     return permission
 }
 
 console.log(getUserPermission(loggedUser))
-
-// ---- poprawna wersja
 
 // ----------------------------------- Bug #012
 
