@@ -67,6 +67,19 @@ console.log(myCar);
 
 // ----------------------------------- Bug #009
 
+// function reducer(accumulator, currentValue) {
+//     currentValue += 1
+
+//     return accumulator + currentValue
+// }
+
+// const numbers = [1, 2, 3]
+// const sum = numbers.reduce(reducer)
+
+// console.log(sum)
+
+// ---- poprawna wersja
+
 function reducer(accumulator, currentValue) {
     currentValue += 1
 
@@ -74,7 +87,7 @@ function reducer(accumulator, currentValue) {
 }
 
 const numbers = [1, 2, 3]
-const sum = numbers.reduce(reducer)
+const sum = numbers.reduce(reducer, 0)
 
 console.log(sum)
 
@@ -87,6 +100,8 @@ function returnDummyObject() {
 }
 
 console.log(returnDummyObject())
+
+// ---- poprawna wersja
 
 // ----------------------------------- Bug #011
 
@@ -111,6 +126,8 @@ function getUserPermission(user) {
 
 console.log(getUserPermission(loggedUser))
 
+// ---- poprawna wersja
+
 // ----------------------------------- Bug #012
 
 const user1 = {
@@ -122,15 +139,21 @@ const user2 = {
 
 console.log(user1 == user2)
 
+// ---- poprawna wersja
+
 // ----------------------------------- Bug #013
 
 const lis = document.querySelectorAll('li')
 
 lis.map((li) => {
     const updatedText =
-    li
-    .innerText
-    .replace('item', 'element')
+        li
+        .innerText
+        .replace('item', 'element')
 
     li.innerText = updatedText
 })
+
+// ---- poprawna wersja
+
+// ----------------------------------- Bug #014
