@@ -162,30 +162,40 @@ console.log(getUserPermission(loggedUser))
 
 // ----------------------------------- Bug #012
 
+// const user1 = {
+//     name: "John",
+// }
+// const user2 = {
+//     name: "John",
+// }
+
+// console.log(user1 == user2)
+
+// ---- poprawna wersja
+
 const user1 = {
-    name: "John",
+    name: "John"
 }
 const user2 = {
-    name: "John",
+    name: "John"
 }
 
-console.log(user1 == user2)
-
-// ---- poprawna wersja
-
+console.log(JSON.stringify(user1) === JSON.stringify(user2))
 // ----------------------------------- Bug #013
 
-const lis = document.querySelectorAll('li')
+// const lis = document.querySelectorAll('li')
 
-lis.map((li) => {
-    const updatedText =
-        li
-        .innerText
-        .replace('item', 'element')
+// lis.map((li) => {
+//     const updatedText =
+//         li
+//         .innerText
+//         .replace('item', 'element')
 
-    li.innerText = updatedText
-})
+//     li.innerText = updatedText
+// })
 
 // ---- poprawna wersja
+
+
 
 // ----------------------------------- Bug #014
