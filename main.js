@@ -196,6 +196,13 @@ console.log(JSON.stringify(user1) === JSON.stringify(user2))
 
 // ---- poprawna wersja
 
+const lis = document.querySelectorAll('li')
+
+lis.forEach((li) => {
+    const updatedText = li.innerText.replace('item', 'element')
+    
+    li.innerText = updatedText
+})
 
 
 // ----------------------------------- Bug #014
