@@ -262,3 +262,6 @@ console.log(thirdLi.closest('.wrapper'));
 
 
 // ----------------------------------- Task X.1
+
+// dodaj w pliku .html tag img (ale bez atrybutow), za pomoca odpowiednich metod w js ustaw atrybut src (wstaw jakis obrazek z internetu) pamietaj o atrybucie alt, stworz funkcje, ktora wyisze w konsoli cokolwiek, funkcja ma sie wykonywac po uplywie 2s
+
