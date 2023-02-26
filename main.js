@@ -265,3 +265,14 @@ console.log(thirdLi.closest('.wrapper'));
 
 // dodaj w pliku .html tag img (ale bez atrybutow), za pomoca odpowiednich metod w js ustaw atrybut src (wstaw jakis obrazek z internetu) pamietaj o atrybucie alt, stworz funkcje, ktora wyisze w konsoli cokolwiek, funkcja ma sie wykonywac po uplywie 2s
 
+const img = document.querySelector('img')
+
+img.setAttribute('src', 'https://unsplash.it/600/400')
+img.setAttribute('alt', 'losowy obrazek z internetu')
+
+const test = () => {
+    console.log('look');
+}
+
+setTimeout(test, 2000)
+
