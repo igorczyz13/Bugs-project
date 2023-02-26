@@ -235,3 +235,14 @@ const shipping = 415
 const total = (price + shipping) / 100
 
 console.log(total);
+
+
+// ----------------------------------- Task X.0
+
+// Stwórz w html strukture div.warpper -> ul -> 5*li, za pomoca js, dodaj do kazdego li tekst 1,2,3 itd oraz data-atrybut o nazwie ID, jako ID podaj cyfre, ktora umiescisz w li, a wiec powinno byc <li dataatrybutID='1'>1</i>, pobierz trzecie li za pomoca data-atrybutu, z poziomu trzeciego li dostan sie do div-a z klasa wrapper i wypisz go w konsoli
+
+
+
+
+
+// ----------------------------------- Task X.1
