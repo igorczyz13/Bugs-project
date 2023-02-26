@@ -204,5 +204,12 @@ lis.forEach((li) => {
     li.innerText = updatedText
 })
 
+// ----------------------------------- Bug #013
 
-// ----------------------------------- Bug #014
+for (let i = 0; i < 10; i++) {
+    setTimeout(() => {
+        console.log('execute with one second delay');
+    }, 1000)
+}
+
+// ---- poprawna wersja
