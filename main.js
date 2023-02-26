@@ -222,12 +222,16 @@ lis.forEach((li) => {
 
 // ----------------------------------- Bug #015
 
-const price = 25.65
-const shipping = 4.15
-const total = price + shipping
+// const price = 25.65
+// const shipping = 4.15
+// const total = price + shipping
 
-console.log(total);
+// console.log(total);
 
 // ---- poprawna wersja
 
+const price = 2565
+const shipping = 415
+const total = (price + shipping) / 100
 
+console.log(total);
