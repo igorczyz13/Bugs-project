@@ -80,16 +80,16 @@ console.log(myCar);
 
 // ---- poprawna wersja
 
-function reducer(accumulator, currentValue) {
-    currentValue += 1
+// function reducer(accumulator, currentValue) {
+//     currentValue += 1
 
-    return accumulator + currentValue
-}
+//     return accumulator + currentValue
+// }
 
-const numbers = [1, 2, 3]
-const sum = numbers.reduce(reducer, 0)
+// const numbers = [1, 2, 3]
+// const sum = numbers.reduce(reducer, 0)
 
-console.log(sum)
+// console.log(sum)
 
 // ----------------------------------- Bug #010
 
@@ -335,6 +335,16 @@ setTimeout(() => {
 }, 2147483647)
 
 // ----------------------------------- Bug #017
+
+// function sum(a, a, c) {
+//     return a + a + c
+// }
+
+// console.log(sum(5, 10, 15))
+
+// ---- poprawna wersja
+
+"use strict"
 
 function sum(a, a, c) {
     return a + a + c
