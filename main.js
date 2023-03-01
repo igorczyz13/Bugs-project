@@ -51,19 +51,19 @@ console.log(priceWithTax);
 
 // ---- poprawna wersja
 
-function Car(color) {
-    this.color = color
-    this.mileage = 0
-}
+// function Car(color) {
+//     this.color = color
+//     this.mileage = 0
+// }
 
-Car.prototype.drive = function (distance) {
-    this.mileage += distance
-}
+// Car.prototype.drive = function (distance) {
+//     this.mileage += distance
+// }
 
-const myCar = new Car('red')
-myCar.drive(1000)
+// const myCar = new Car('red')
+// myCar.drive(1000)
 
-console.log(myCar);
+// console.log(myCar);
 
 // ----------------------------------- Bug #009
 
@@ -354,6 +354,20 @@ console.log(sum(5, 10, 15))
 
 // ----------------------------------- Bug #019
 
+// const Car = {
+//     color: "red",
+//     drive() {
+//         console.log(this)
+//     },
+// }
+
+// Car.drive()
+
+// const driveMyCar = Car.drive
+
+// driveMyCar()
+
+// ---- poprawna wersja
 const Car = {
     color: "red",
     drive() {
@@ -363,6 +377,6 @@ const Car = {
 
 Car.drive()
 
-const driveMyCar = Car.drive
+const driveMyCar = Car.drive.bind(Car)
 
 driveMyCar()
