@@ -334,7 +334,7 @@ setTimeout(() => {
     console.log('24.8 days');
 }, 2147483647)
 
-// ----------------------------------- Bug #017
+// ----------------------------------- Bug #018
 
 // function sum(a, a, c) {
 //     return a + a + c
@@ -351,3 +351,18 @@ function sum(a, a, c) {
 }
 
 console.log(sum(5, 10, 15))
+
+// ----------------------------------- Bug #019
+
+const Car = {
+    color: "red",
+    drive() {
+        console.log(this)
+    },
+}
+
+Car.drive()
+
+const driveMyCar = Car.drive
+
+driveMyCar()
