@@ -383,16 +383,16 @@ driveMyCar()
 
 // ----------------------------------- Bug #020
 
-console.log(foo())
-console.log(bar())
+// console.log(foo())
+// console.log(bar())
 
-var foo = function () {
-    return "foo"
-}
+// var foo = function () {
+//     return "foo"
+// }
 
-function bar() {
-    return "bar"
-}
+// function bar() {
+//     return "bar"
+// }
 
 // ---- poprawna wersja
 
